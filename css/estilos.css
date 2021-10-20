@@ -13,36 +13,6 @@ h1 {
   font-family: "Noto Serif";
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-
-@media (max-width: 1399px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    max-width: 570px;
-  }
-}
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -73,39 +43,6 @@ h1 {
 .menu ul li a {
   text-decoration: none;
   color: black;
-}
-
-@media (max-width: 768px) {
-  .cabecalho {
-    padding: 50px;
-  }
-  .menu ul {
-    width: 270px;
-  }
-}
-
-@media (max-width: 576px) {
-  .cabecalho {
-    padding: 10px;
-    display: block;
-    height: 100%;
-    text-align: center;
-  }
-
-  .menu ul {
-    width: 100%;
-    display: block;
-  }
-
-  .marca {
-    font-size: 74px;
-  }
-
-  .menu ul a {
-    padding-top: 5px;
-    padding-top: 5px;
-    display: block;
-  }
 }
 
 .conteudo-principal {
@@ -160,8 +97,15 @@ h1 {
   height: 500px;
   object-fit: cover;
   box-shadow: #000 0 24px 48px 0;
+  filter: grayscale(0.5);
+  transition: all 0.8s ease;
 }
 
+.foto-perfil:hover{
+  transform: rotate(-6deg);
+  filter: grayscale(0) ;
+
+}
 .fundo{
   transform: translateX(calc(50% - 212px)) rotate(-6deg);
   width: 500px;
@@ -182,7 +126,48 @@ h1 {
   padding-right: 20px;
 }
 
+#campo{
+  position: absolute;
+  top: 74px;
+  right: 131px;
+  display: none;
+}
+
+#campo input{
+  font-size: 18px;
+  border-radius: 2px;
+  padding: 5px;
+  border: 0;
+}
+
+.titulo-projeto{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.linha-seta{
+  text-align: right;
+}
+
+.linha-seta a{
+  font-size: 30px;
+  color: white;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
 @media (max-width: 1399px) {
+
+  .container {
+    max-width: 1140px;
+  }
+
   .texto-titulo {
     font-size: 50px;
   }
@@ -203,6 +188,11 @@ h1 {
 }
 
 @media (max-width: 992px) {
+
+  .container {
+    max-width: 960px;
+  }
+
   .texto-titulo {
     font-size: 50px;
   }
@@ -234,6 +224,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
+  .container {
+    max-width: 720px;
+  }
+
   .foto-perfil {
     width: 100%;
     max-width: 400px;
@@ -266,6 +261,43 @@ h1 {
   .redes-sociais{
     margin-top: 50px;
     justify-content: center;
+  }
+
+  .cabecalho {
+    padding: 50px;
+  }
+  .menu ul {
+    width: 270px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .container {
+    max-width: 570px;
+  }
+
+  .cabecalho {
+    padding: 10px;
+    display: block;
+    height: 100%;
+    text-align: center;
+  }
+
+  .menu ul {
+    width: 100%;
+    display: block;
+  }
+
+  .marca {
+    font-size: 74px;
+  }
+
+  .menu ul a {
+    padding-top: 5px;
+    padding-top: 5px;
+    display: block;
   }
 }
 
